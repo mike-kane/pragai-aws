@@ -10,7 +10,7 @@ def runner():
     cli_runner = CliRunner()
     yield cli_runner
 
-
 def test_cli(runner):
     result = runner.invoke(cli, ['--version'])
-    assert __version__ in result.output   
+    assert __version__ in result.output
+    
